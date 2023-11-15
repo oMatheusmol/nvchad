@@ -129,6 +129,10 @@ local plugins = {
     end
   },
   {
+    "christoomey/vim-tmux-navigator",
+    lazy=false
+  },
+  {
     "mfussenegger/nvim-dap",
     config = function()
       require "custom.configs.dap"
