@@ -139,6 +139,16 @@ local plugins = {
       require("core.utils").load_mappings("dap")
     end
   },
+  {
+    'mg979/vim-visual-multi',
+    branch = 'master',
+    lazy = false,
+    init = function()
+      vim.g.VM_maps = {
+        ["Find Under"] = "<C-d>"
+      }
+    end,
+  },
 }
 
 function ChatGPTInit()
